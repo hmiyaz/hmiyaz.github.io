@@ -1,45 +1,62 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function togglePublications() {
+            var pubList = document.getElementById("publications-list");
+            if (pubList.style.display === "none" || pubList.style.display === "") {
+                pubList.style.display = "block";
+            } else {
+                pubList.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Top Page</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>ここに自己紹介を書きます。</p>
+        </section>
 
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>過去の作品やプロジェクトを紹介します。</p>
+        </section>
+        
+        <section id="publications">
+            <h2 onclick="togglePublications()" style="cursor: pointer;">Publications ▼</h2>
+            <ul id="publications-list" style="display: none;">
+                <li>論文1 - 著者, タイトル, ジャーナル, 年</li>
+                <li>論文2 - 著者, タイトル, ジャーナル, 年</li>
+                <li>論文3 - 著者, タイトル, ジャーナル, 年</li>
+            </ul>
+        </section>
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>連絡先情報やお問い合わせフォームを設置できます。</p>
+        </section>
+    </div>
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 50px;
-    text-align: center;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    <footer>
+        <p>&copy; 2025 My Web Page</p>
+    </footer>
+</body>
+</html>
