@@ -39,6 +39,25 @@ nav ul li a {
     border-radius: 8px;
 }
 
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
 section {
     margin-bottom: 40px;
 }
@@ -71,5 +90,9 @@ footer {
         display: block;
         text-align: center;
         margin: 5px 0;
+    }
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
