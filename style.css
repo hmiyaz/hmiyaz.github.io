@@ -121,7 +121,7 @@ h2 {
     list-style-type: decimal-leading-zero;
     margin: 10px 0 auto;
     width: 95%;
-    word-break: keep-all;
+    word-break: break-all;
 }
 
 footer {
@@ -204,6 +204,7 @@ footer {
         margin: 3px 0 auto;
     }
     [id*="-list-jp"] {
+        text-align: justify;
         padding-left: 20px;
         font-size: 0.8em;
         margin: 3px 0 auto;
