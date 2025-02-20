@@ -19,13 +19,13 @@
         fetch('publications.json')
             .then(response => response.json())
             .then(data => {
-                populateList('journal-list', data.journal);
-                populateList('proceedings-list', data.proceedings);
-                populateList('internationalconf-list', data.internationalconf);
-                populateList('nationalconf-list', data.nationalconf);
-                populateList('lecture-list', data.lecture);
-                populateList('patent-list', data.patent);
-                populateList('media-list', data.media);
+                populateList('journal-list-en', data.journal);
+                populateList('proceedings-list-en', data.proceedings);
+                populateList('internationalconf-list-en', data.internationalconf);
+                populateList('nationalconf-list-jp', data.nationalconf);
+                populateList('lecture-list-jp', data.lecture);
+                populateList('patent-list-jp', data.patent);
+                populateList('media-list-jp', data.media);
             })
             .catch(error => console.error("Error loading publications:", error));
         }
@@ -95,26 +95,26 @@
         
         <section id="publications">
             <h2>Publications</h2>
-            <p onclick="togglePublications('journal-list')" style="cursor: pointer;"><strong>学術論文（全文査読付ジャーナル誌） ▼</strong></p>
-            <ul id="journal-list" style="display: none;">
+            <p onclick="togglePublications('journal-list-en')" style="cursor: pointer;"><strong>学術論文（全文査読付ジャーナル誌） ▼</strong></p>
+            <ul id="journal-list-en" style="display: none;">
             </ul>
-            <p onclick="togglePublications('proceedings-list')" style="cursor: pointer;"><strong>学術論文（全文査読付Proceedings） ▼</strong></p>
-            <ul id="proceedings-list" style="display: none;">
+            <p onclick="togglePublications('proceedings-list-en')" style="cursor: pointer;"><strong>学術論文（全文査読付Proceedings） ▼</strong></p>
+            <ul id="proceedings-list-en" style="display: none;">
             </ul>
-            <p onclick="togglePublications('internationalconf-list')" style="cursor: pointer;"><strong>国際会議口頭発表 ▼</strong></p>
-            <ul id="internationalconf-list" style="display: none;">
+            <p onclick="togglePublications('internationalconf-list-en')" style="cursor: pointer;"><strong>国際会議口頭発表 ▼</strong></p>
+            <ul id="internationalconf-list-en" style="display: none;">
             </ul>
-            <p onclick="togglePublications('nationalconf-list')" style="cursor: pointer;"><strong>国内口頭発表 ▼</strong></p>
-            <ul id="nationalconf-list" style="display: none;">
+            <p onclick="togglePublications('nationalconf-list-jp')" style="cursor: pointer;"><strong>国内口頭発表 ▼</strong></p>
+            <ul id="nationalconf-list-jp" style="display: none;">
             </ul>
-            <p onclick="togglePublications('lecture-list')" style="cursor: pointer;"><strong>講演・総説・解説・資料等 ▼</strong></p>
-            <ul id="lecture-list" style="display: none;">
+            <p onclick="togglePublications('lecture-list-jp')" style="cursor: pointer;"><strong>講演・総説・解説・資料等 ▼</strong></p>
+            <ul id="lecture-list-jp" style="display: none;">
             </ul>
-            <p onclick="togglePublications('patent-list')" style="cursor: pointer;"><strong>特許 ▼</strong></p>
-            <ul id="patent-list" style="display: none;">
+            <p onclick="togglePublications('patent-list-jp')" style="cursor: pointer;"><strong>特許 ▼</strong></p>
+            <ul id="patent-list-jp" style="display: none;">
             </ul>
-            <p onclick="togglePublications('media-list')" style="cursor: pointer;"><strong>メディア報道 ▼</strong></p>
-            <ul id="media-list" style="display: none;">
+            <p onclick="togglePublications('media-list-jp')" style="cursor: pointer;"><strong>メディア報道 ▼</strong></p>
+            <ul id="media-list-jp" style="display: none;">
             </ul>
 
 

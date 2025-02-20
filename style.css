@@ -106,8 +106,17 @@ h2 {
     border-radius: 8px;
 }
 
-[id*="-list"] {
+[id*="-list-en"] {
     text-align: justify;
+    padding-left: 40px;
+    list-style-type: decimal-leading-zero;
+    margin: 10px 0 auto;
+    width: 95%;
+    word-break: keep-all;
+}
+
+[id*="-list-jp"] {
+    text-align: start;
     padding-left: 40px;
     list-style-type: decimal-leading-zero;
     margin: 10px 0 auto;
@@ -189,9 +198,15 @@ footer {
     .profile-info p1 {
         font-size: 1.2em;
     }
-    [id*="-list"] {
+    [id*="-list-en"] {
         padding-left: 20px;
         font-size: 0.8em;
         margin: 3px 0 auto;
+    }
+    [id*="-list-jp"] {
+        padding-left: 20px;
+        font-size: 0.8em;
+        margin: 3px 0 auto;
+        word-break: break-all;
     }
 }
