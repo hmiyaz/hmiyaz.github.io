@@ -47,8 +47,8 @@ nav ul li a {
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #007bff;
@@ -67,7 +67,9 @@ h2 {
 }
 
 #publications-list {
-    padding-left: 20px;
+    padding-left: 40px;
+    list-style-type: decimal-leading-zero;
+    margin: 5px 0;
 }
 
 footer {
