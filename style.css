@@ -111,7 +111,7 @@ h2 {
     padding-left: 40px;
     list-style-type: decimal-leading-zero;
     margin: 10px 0 auto;
-    width: 90%;
+    width: 95%;
     word-break: keep-all;
 }
 
@@ -192,6 +192,6 @@ footer {
     [id*="-list"] {
         padding-left: 20px;
         font-size: 0.8em;
-        margin: 3px 0;
+        margin: 3px 0 auto;
     }
 }
