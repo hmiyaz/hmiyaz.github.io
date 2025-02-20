@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 20;
+    padding: 0;
     background-color: #e0e5eb;
     color: #333;
     line-height: 1.6;
@@ -136,7 +136,36 @@ footer {
         width: 150px;
         height: 150px;
     }
+    .aboutme-text {
+        line-height: 1.6; 
+        padding-left: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .biography-text {
+        line-height: 1.6; 
+        padding-left: 10px;
+        margin-bottom: 5px;
+    }
+    
     h2 {
+        font-size: 1.2em;
+    }
+    section {
+        margin-bottom: 25px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #about, #biography, #publications, #link {
+        background: #eef4ff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .profile-info p {
+        font-size: 1.0em;
+    }
+    
+    .profile-info p1 {
         font-size: 1.2em;
     }
 }
