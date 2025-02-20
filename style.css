@@ -38,6 +38,7 @@ nav ul li a {
     line-height: 1.6; 
     padding-left: 20px;
     margin-bottom: 10px;
+    word-break: keep-all;
 }
 
 .biography-text {
@@ -78,6 +79,7 @@ nav ul li a {
 .profile-info p {
     margin: 0 0;
     font-size: 1.1em;
+    word-break: keep-all;
 }
 
 .profile-info p1 {
