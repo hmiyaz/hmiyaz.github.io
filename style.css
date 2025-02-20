@@ -25,7 +25,6 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
-    text-align: justify;
 }
 
 nav ul li a {
@@ -108,9 +107,10 @@ h2 {
 }
 
 [id*="-list"] {
+    text-align: justify;
     padding-left: 40px;
     list-style-type: decimal-leading-zero;
-    margin: 10px 0;
+    margin: 10px 0 auto;
 }
 
 footer {
@@ -186,5 +186,9 @@ footer {
     
     .profile-info p1 {
         font-size: 1.2em;
+    }
+    [id*="-list"] {
+        padding-left: 20px;
+        lfont-size: 0.8em;
     }
 }
