@@ -66,7 +66,7 @@ h2 {
     color: #007bff;
 }
 
-#publications-list {
+[id*="-list"] {
     padding-left: 40px;
     list-style-type: decimal-leading-zero;
     margin: 5px 0;
