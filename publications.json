@@ -9,6 +9,7 @@
         ,"Satoru Yamamoto, Koki Araki, Shota Moriguchi, Hironori Miyazawa, Takashi Furusawa, Koichi Yonezawa, Shuichi Umezawa, and Shuichi Ohmori, Takeshi Suzuki, Effects of Wetness and Humidity on Transonic Compressor of Gas Turbine, International Journal of Heat and Mass Transfer, 178 (2021),121649. https://doi.org/10.1016/j.ijheatmasstransfer.2021.121649."
         ,"Shuto Yatsuyanagi, Takashi Furusawa, Hironori Miyazawa, Satoru Yamamoto, Takuo Onodera, Sadatake Tomioka, Numerical Study of Supercritical Octane Flow with Multicomponent Effects by Pyrolysis, International Journal of Thermal Sciences, 171, (2022), 107103. https://doi.org/10.1016/j.ijthermalsci.2021.107193."
         ,"Piotr Wiśniewski, Sławomir Dykas, Hironori Miyazawa, Takashi Furusawa, Satoru Yamamoto, Modified heat transfer correction function for modeling multiphase condensing flows in transonic regime, International Journal of Heat and Mass Transfer, 201 (2023),123597. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2022.123597."
+        ,"Yasuharu Hagita, Hironori Miyazawa, Takashi Furusawa, Satoru Yamamoto, High-fidelity large eddy simulation of transonic wet steam flows through a steam turbine cascade, International Journal of Heat and Mass Transfer, 252 (2025),127415. https://doi.org/10.1016/j.ijheatmasstransfer.2025.127415"
 
     ],
     "proceedings": [
@@ -29,6 +30,8 @@
         ,"Yasuharu Hagita, Hironori Miyazawa*, Takashi Furusawa, Satoru Yamamoto, Koichi Yonezawa, Shuichi Umezawa, Shuichi Ohmori, Takeshi Suzuki, The Effect of Partial-Load Operation on a Gas Turbine Compressor of an Advanced Combined Cycle Power Plant, Proc. ASME 2022 Turbo Expo, GT2022-80251, (2022), 12 pages. https://doi.org/10.1115/GT2022-80251."
         ,"Takashi Furusawa, Yasuhiro Sasao, Ryo Takata, Hironori Miyazawa, Satoru Yamamoto, Numerical Modeling of Water Droplets in Compressible Two-Phase Flows Based on Eulerian-Eulerian Method, Proc. ASME 2022 Turbo Expo, GT2022-81246, (2022), 9 pages. https://doi.org/10.1115/GT2022-81246."
         ,"Yasuharu Hagita, Riku Hayakawa, Hironori Miyazawa*, Takashi Furusawa, Satoru Yamamoto, Self-organization of Unsteady Full-Annulus Flows in A Gas Turbine Compressor under Operating Conditions, ASME 2023 Turbo Expo, GT2023-101937, (2023), 11 pages. https://doi.org/10.1115/GT2023-101937.2"
+        ,"Hironori Miyazawa, Yoshihiro Kitamura, Takashi Furusawa, Satoru Yamamoto, Kentaro Nakayama, Naoyuki Niwa, Naoki Kanazawa, Surge and Rotating Stall Detection for Axial Compressor Flow Based on Self-Organizing Map, Proc. ASME 2025 Turbo Expo, GT2025-152088, 2025, 13 pages."
+        ,"Takashi Furusawa, Kazushi Morikita, Hironori Miyazawa, Satoru Yamamoto, Yasuhiro Sasao, Satoshi Miyake, Soichiro Tabata, Wet-Steam Flow Simulation With Coarse Water Droplets Through a Turbine Cascade Based on Eulerian-Eulerian Method, Proc. ASME 2025 Turbo Expo, GT2025-151602, (2025), 10 pages."
 
     ],
     "internationalconf": [
@@ -95,6 +98,12 @@
         ,"古澤卓，羽場千祥，宮澤弘法，山本悟，LESを用いた加熱管路内部の遷臨界ドデカン流動シミュレーション, 第37回数値流体力学シンポジウム，(2023.12)."
         ,"富田謙衡，古澤卓，宮澤弘法，笹尾泰洋，山本悟，液滴速度非平衡を考慮した湿り空気のタービン翼列流動シミュレーション, 第37回数値流体力学シンポジウム， (2023.12)."
         ,"萩田泰晴，宮澤弘法，古澤卓，山本悟，凝縮を伴う蒸気タービン翼列流れのLES，第52回日本ガスタービン学会定期講演会，(2024.10)."
+        ,"古澤 卓，森北 和志，宮澤 弘法，山本 悟，笹尾 泰洋，田畑 創一朗，三宅 哲，粗大液滴を含む湿り蒸気のタービン翼列流動シミュレーション，第102期流体工学部門講演会，(2024.11)"
+        ,"吉岡 慶祐，古澤 卓，宮澤 弘法，山本 悟，粗大液滴を考慮した遷音速圧縮機翼列熱流動シミュレーション，第38回数値流体力学シンポジウム，(2024.12)."
+        ,"宅間 智哉，萩田 泰晴，宮澤 弘法．古澤 卓，山本 悟，凝縮を考慮した湿り空気遷音速バフェットのDDES，第38回数値流体力学シンポジウム，(2024.12)."
+        ,"近藤 秀祐，古澤 卓，宮澤 弘法，山本 悟，遷臨界流体の加熱管路内部流動LES，第38回数値流体力学シンポジウム，(2024.12)."
+        ,"古川 雄貴，古澤 卓，宮澤 弘法，山本 悟，粒子生成を伴う超臨界水熱合成反応器内部の混合流動シミュレーション，第38回数値流体力学シンポジウム，(2024.12)."
+        ,"宮澤 弘法，萩田 泰晴，古澤 卓，山本 悟，梅沢 修一，米澤 宏一，八木 啓介，宮垣 寛之，アンモニア燃料で稼働する産業用ガスタービン圧縮機の非定常流動シミュレーション，第25回動力・エネルギー技術シンポジウム，(2025.6)."
 
     ],
     "lecture": [
