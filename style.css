@@ -35,14 +35,14 @@ nav ul li a {
 }
 
 .aboutme-text {
-    line-height: 1.6; 
+    line-height: 1.6;
     padding-left: 20px;
     margin-bottom: 10px;
     word-break: keep-all;
 }
 
 .biography-text {
-    line-height: 1.6; 
+    line-height: 1.6;
     padding-left: 20px;
     margin-bottom: 10px;
 }
@@ -71,7 +71,7 @@ nav ul li a {
 .profile-img {
     width: 220px;
     height: 220px;
-    border-radius: 50%;
+    border-radius: 10px;
     object-fit: cover;
     border: 3px solid #007bff;
 }
@@ -100,7 +100,10 @@ h2 {
     margin-bottom: 20px;
 }
 
-#about, #biography, #publications, #link {
+#about,
+#biography,
+#publications,
+#link {
     align-items: center;
     width: 95%;
     background: #eef4ff;
@@ -142,69 +145,82 @@ footer {
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    
+
     .container {
         width: 90%;
         margin: 20px auto;
         padding: 15px;
     }
+
     nav ul li {
         display: block;
         text-align: start;
         margin: 1px 0;
     }
+
     nav ul li a {
         font-size: 0.9em;
     }
+
     .profile-container {
         flex-direction: column;
         align-items: center;
         width: 95%;
         margin: 10px auto;
     }
+
     .profile-img {
         width: 150px;
         height: 150px;
     }
+
     .aboutme-text {
-        line-height: 1.6; 
+        line-height: 1.6;
         padding-left: 10px;
         margin-bottom: 5px;
     }
-    
+
     .biography-text {
-        line-height: 1.6; 
+        line-height: 1.6;
         padding-left: 10px;
         margin-bottom: 5px;
     }
-    
+
     h2 {
         font-size: 1.2em;
     }
+
     section {
         margin-bottom: 25px;
         padding: 10px;
         border-radius: 5px;
     }
-    #about, #biography, #publications, #link {
+
+    #about,
+    #biography,
+    #publications,
+    #link {
         width: 95%;
         margin: 2cap auto;
         background: #eef4ff;
         padding: 10px;
         border-radius: 5px;
     }
+
     .profile-info p {
         font-size: 1.0em;
     }
-    
+
     .profile-info p1 {
         font-size: 1.2em;
     }
+
     [id*="-list-en"] {
         padding-left: 10px;
         font-size: 0.7em;
         margin: 3px 0 auto;
     }
+
     [id*="-list-jp"] {
         text-align: justify;
         padding-left: 10px;
