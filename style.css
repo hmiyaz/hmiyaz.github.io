@@ -1,231 +1,232 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #e0e5eb;
-    color: #333;
-    line-height: 1.6;
+@charset "UTF-8";
+
+:root {
+    --primary-color: #2c3e50;
+    /* Dark Blue-Grey */
+    --accent-color: #3498db;
+    /* Bright Blue */
+    --bg-color: #f4f7f6;
+    /* Light Greyish Blue */
+    --text-color: #333;
+    --header-bg: rgba(255, 255, 255, 0.95);
+    --card-bg: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --radius: 8px;
 }
 
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
 header {
-    background-color: #007bff;
-    padding: 0px;
-    text-align: center;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: var(--header-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-.aboutme-text {
-    line-height: 1.6;
-    padding-left: 20px;
-    margin-bottom: 10px;
-    word-break: keep-all;
+nav ul li a:hover {
+    color: var(--accent-color);
+    background-color: rgba(52, 152, 219, 0.1);
 }
 
-.biography-text {
-    line-height: 1.6;
-    padding-left: 20px;
-    margin-bottom: 10px;
-}
-
+/* Main Container */
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1000px;
     margin: 40px auto;
-    background: white;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 0;
 }
 
+/* Sections */
+section {
+    background: var(--card-bg);
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+/* Profile Section */
 .profile-container {
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin-bottom: 30px;
-    font-size: 1.1em;
-    background: #d5ddec;
-    padding: 15px;
-    border-radius: 8px;
+    gap: 40px;
+    background: linear-gradient(to right, #eef2f3, #ffffff);
+    /* Subtle gradient */
+    padding: 30px;
+    border-radius: var(--radius);
 }
 
 .profile-img {
     width: 220px;
     height: 260px;
-    border-radius: 10px;
     object-fit: cover;
-    border: 3px solid #007bff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border: 4px solid white;
+    /* Image Quality Fix */
+    image-rendering: auto;
+    /* Default is best for photos */
+    transform: translateZ(0);
+    /* Hardware acceleration */
 }
 
-.profile-info p {
-    margin: 0 0;
-    font-size: 1.1em;
-    word-break: keep-all;
+.profile-info {
+    flex: 1;
 }
 
 .profile-info p1 {
-    margin: 0px 0px;
-    font-size: 1.7em;
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    line-height: 1.2;
 }
 
-section {
-    margin-bottom: 50px;
-    padding: 20px;
-    border-radius: 8px;
+.profile-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
 }
 
-h2 {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-#about,
-#biography,
-#publications,
-#link {
-    align-items: center;
-    width: 95%;
-    background: #eef4ff;
-    padding: 25px;
-    border-radius: 8px;
-}
-
-[id*="-list-en"] {
-    text-align: justify;
-    padding-left: 40px;
-    list-style-type: decimal-leading-zero;
-    margin: 10px 0 auto;
-    width: 95%;
+/* About & Biography */
+.aboutme-text,
+.biography-text {
+    font-size: 1.05em;
+    line-height: 1.8;
     word-break: keep-all;
+    /* Prevent awkward breaks in Japanese */
 }
 
-[id*="-list-jp"] {
-    text-align: start;
-    padding-left: 40px;
+/* Publications */
+#publications p {
+    cursor: pointer;
+    padding: 12px 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--accent-color);
+    margin: 15px 0 5px 0;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    border-radius: 0 4px 4px 0;
+}
+
+#publications p:hover {
+    background-color: #e9ecef;
+}
+
+#publications ul {
+    padding-left: 2.5em;
+    /* Space for numbers */
+    margin-top: 10px;
+    margin-bottom: 20px;
     list-style-type: decimal-leading-zero;
-    margin: 10px 0 auto;
-    width: 95%;
-    word-break: break-all;
+    /* Content preservation: numbering */
 }
 
+#publications ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Links */
+#link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dashed var(--accent-color);
+    transition: border-bottom 0.2s;
+}
+
+#link a:hover {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 0px;
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.9em;
+    margin-top: 40px;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-    header {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    .container {
-        width: 90%;
-        margin: 20px auto;
-        padding: 15px;
-    }
-
-    nav ul li {
-        display: block;
-        text-align: start;
-        margin: 1px 0;
-    }
-
-    nav ul li a {
-        font-size: 0.9em;
-    }
-
     .profile-container {
         flex-direction: column;
-        align-items: center;
-        width: 95%;
-        margin: 10px auto;
+        text-align: center;
+        padding: 20px;
     }
 
     .profile-img {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 212px;
+        /* Maintain aspect ratio approx */
     }
 
-    .aboutme-text {
-        line-height: 1.6;
-        padding-left: 10px;
-        margin-bottom: 5px;
+    nav ul li {
+        margin: 5px 10px;
     }
 
-    .biography-text {
-        line-height: 1.6;
-        padding-left: 10px;
-        margin-bottom: 5px;
-    }
-
-    h2 {
-        font-size: 1.2em;
+    .container {
+        width: 95%;
+        margin: 20px auto;
     }
 
     section {
-        margin-bottom: 25px;
-        padding: 10px;
-        border-radius: 5px;
+        padding: 20px;
     }
 
-    #about,
-    #biography,
-    #publications,
-    #link {
-        width: 95%;
-        margin: 2cap auto;
-        background: #eef4ff;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    .profile-info p {
-        font-size: 1.0em;
-    }
-
-    .profile-info p1 {
-        font-size: 1.2em;
-    }
-
-    [id*="-list-en"] {
-        padding-left: 10px;
-        font-size: 0.7em;
-        margin: 3px 0 auto;
-    }
-
-    [id*="-list-jp"] {
-        text-align: justify;
-        padding-left: 10px;
-        font-size: 0.7em;
-        margin: 3px 0 auto;
-        word-break: break-all;
+    h2 {
+        font-size: 1.5em;
     }
 }

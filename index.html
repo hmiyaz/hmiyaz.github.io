@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +17,18 @@
         }
 
         function loadPublications() {
-        fetch('publications.json')
-            .then(response => response.json())
-            .then(data => {
-                populateList('journal-list-en', data.journal);
-                populateList('proceedings-list-en', data.proceedings);
-                populateList('internationalconf-list-en', data.internationalconf);
-                populateList('nationalconf-list-jp', data.nationalconf);
-                populateList('lecture-list-jp', data.lecture);
-                populateList('patent-list-jp', data.patent);
-                populateList('media-list-jp', data.media);
-            })
-            .catch(error => console.error("Error loading publications:", error));
+            fetch('publications.json')
+                .then(response => response.json())
+                .then(data => {
+                    populateList('journal-list-en', data.journal);
+                    populateList('proceedings-list-en', data.proceedings);
+                    populateList('internationalconf-list-en', data.internationalconf);
+                    populateList('nationalconf-list-jp', data.nationalconf);
+                    populateList('lecture-list-jp', data.lecture);
+                    populateList('patent-list-jp', data.patent);
+                    populateList('media-list-jp', data.media);
+                })
+                .catch(error => console.error("Error loading publications:", error));
         }
 
         function populateList(listId, items) {
@@ -43,6 +44,7 @@
         document.addEventListener("DOMContentLoaded", loadPublications);
     </script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -55,7 +57,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <div class="container">
         <section id="profile">
             <div class="profile-container">
@@ -63,10 +65,10 @@
                 <div class="profile-info">
                     <p1><strong>宮澤 弘法 / Hironori Miyazawa</strong></p1>
                     <p><b>東北大学 大学院情報科学研究科
-                    <br>情報基礎科学専攻 情報応用数理学講座 計算数理科学分野</p>
+                            <br>情報基礎科学専攻 情報応用数理学講座 計算数理科学分野</p>
                     <p>助教</p>
                     <p>博士(情報科学)</b></p>
-                    
+
 
                 </div>
             </div>
@@ -79,35 +81,40 @@
                 研究キーワード：CFD、ターボ機械、湿り空気・蒸気、機械学習<br>
                 所属学会：日本機械学会、日本ガスタービン学会<br>
                 担当講義：コンピュータ実習Ⅰ、コンピュータ実習Ⅱ、機械知能・航空実験Ⅱ<br>
-            </p>      
+            </p>
         </section>
 
         <section id="biography">
             <h2>Biography</h2>
-            <p class="biography-text"> 
+            <p class="biography-text">
                 2014年3月 　　東北大学 工学部 機械知能・航空工学科 卒業<br>
                 2016年3月 　　東北大学 大学院情報科学研究科 博士課程前期2年の課程修了<br>
                 2019年3月 　　東北大学 大学院情報科学研究科 博士課程後期3年の課程修了<br>
                 （2017年4月～2019年3月 独立行政法人日本学術振興会 特別研究員）<br>
-                2019年4月～ 　東北大学大学院情報科学研究科 情報基礎科学専攻 情報応用数理学講座 計算数理科学分野 助教 
+                2019年4月～ 　東北大学大学院情報科学研究科 情報基礎科学専攻 情報応用数理学講座 計算数理科学分野 助教
             </p>
         </section>
-        
+
         <section id="publications">
             <h2>Publications</h2>
-            <p onclick="togglePublications('journal-list-en')" style="cursor: pointer;"><strong>学術論文（全文査読付ジャーナル誌） ▼</strong></p>
+            <p onclick="togglePublications('journal-list-en')" style="cursor: pointer;"><strong>学術論文（全文査読付ジャーナル誌）
+                    ▼</strong></p>
             <ul id="journal-list-en" style="display: none;">
             </ul>
-            <p onclick="togglePublications('proceedings-list-en')" style="cursor: pointer;"><strong>学術論文（全文査読付Proceedings） ▼</strong></p>
+            <p onclick="togglePublications('proceedings-list-en')" style="cursor: pointer;">
+                <strong>学術論文（全文査読付Proceedings） ▼</strong></p>
             <ul id="proceedings-list-en" style="display: none;">
             </ul>
-            <p onclick="togglePublications('internationalconf-list-en')" style="cursor: pointer;"><strong>国際会議口頭発表 ▼</strong></p>
+            <p onclick="togglePublications('internationalconf-list-en')" style="cursor: pointer;"><strong>国際会議口頭発表
+                    ▼</strong></p>
             <ul id="internationalconf-list-en" style="display: none;">
             </ul>
-            <p onclick="togglePublications('nationalconf-list-jp')" style="cursor: pointer;"><strong>国内口頭発表 ▼</strong></p>
+            <p onclick="togglePublications('nationalconf-list-jp')" style="cursor: pointer;"><strong>国内口頭発表 ▼</strong>
+            </p>
             <ul id="nationalconf-list-jp" style="display: none;">
             </ul>
-            <p onclick="togglePublications('lecture-list-jp')" style="cursor: pointer;"><strong>講演・総説・解説・資料等 ▼</strong></p>
+            <p onclick="togglePublications('lecture-list-jp')" style="cursor: pointer;"><strong>講演・総説・解説・資料等 ▼</strong>
+            </p>
             <ul id="lecture-list-jp" style="display: none;">
             </ul>
             <p onclick="togglePublications('patent-list-jp')" style="cursor: pointer;"><strong>特許 ▼</strong></p>
@@ -124,7 +131,7 @@
             <h2>Link</h2>
             <p>　<a href="https://researchmap.jp/hmiyazawa">researchmap</a></p>
             <script type="text/javascript">
-                <!--
+                <!-
                 function converter(M){
                 var str="", str_as="";
                 for(var i=0;i<M.length;i++){
@@ -142,7 +149,7 @@
                 + escape(k_2) + "'");} 
                 document.write('<p>　<a href=JavaScript:mail_to("","")>Contact ✉<\/a></p>');
                 //-->
-                </script>
+            </script>
         </section>
     </div>
 
@@ -150,4 +157,5 @@
         <p>&copy; 2025 Hironori Miyazawa, All rights reserved</p>
     </footer>
 </body>
+
 </html>
