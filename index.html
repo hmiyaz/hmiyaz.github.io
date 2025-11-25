@@ -7,12 +7,14 @@
     <title>My Web Page</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        function togglePublications(sectionId) {
+        function togglePublications(sectionId, btn) {
             var pubList = document.getElementById(sectionId);
             if (pubList.style.display === "none" || pubList.style.display === "") {
                 pubList.style.display = "block";
+                if (btn) btn.setAttribute("aria-expanded", "true");
             } else {
                 pubList.style.display = "none";
+                if (btn) btn.setAttribute("aria-expanded", "false");
             }
         }
 
@@ -49,11 +51,11 @@
     <header>
         <nav>
             <ul>
-                <li>　<a href="#about">About</a></li>
-                <li>　<a href="#biography">Biography</a></li>
-                <li>　<a href="#publications">Publications</a></li>
-                <li>　<a href="#link">Link</a></li>
-                <li>　<a href="https://www.caero.mech.tohoku.ac.jp/wordpress/">Top Page</a>　</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#link">Link</a></li>
+                <li><a href="https://www.caero.mech.tohoku.ac.jp/wordpress/">Top Page</a></li>
             </ul>
         </nav>
     </header>
@@ -63,13 +65,11 @@
             <div class="profile-container">
                 <img src="profile.jpg" alt="Profile Picture" class="profile-img">
                 <div class="profile-info">
-                    <p1><strong>宮澤 弘法 / Hironori Miyazawa</strong></p1>
+                    <p1>宮澤 弘法 / Hironori Miyazawa</p1>
                     <p><b>東北大学 大学院情報科学研究科
-                            <br>情報基礎科学専攻 情報応用数理学講座 計算数理科学分野</p>
+                            <br>情報基礎科学専攻 情報応用数理学講座 計算数理科学分野</b></p>
                     <p>助教</p>
-                    <p>博士(情報科学)</b></p>
-
-
+                    <p>博士(情報科学)</p>
                 </div>
             </div>
         </section>
@@ -97,35 +97,40 @@
 
         <section id="publications">
             <h2>Publications</h2>
-            <p onclick="togglePublications('journal-list-en')" style="cursor: pointer;"><strong>学術論文（全文査読付ジャーナル誌）
-                    ▼</strong></p>
+            <button class="toggle-btn" onclick="togglePublications('journal-list-en', this)"
+                aria-expanded="false">学術論文（全文査読付ジャーナル誌）</button>
             <ul id="journal-list-en" style="display: none;">
             </ul>
-            <p onclick="togglePublications('proceedings-list-en')" style="cursor: pointer;">
-                <strong>学術論文（全文査読付Proceedings） ▼</strong>
-            </p>
+
+            <button class="toggle-btn" onclick="togglePublications('proceedings-list-en', this)"
+                aria-expanded="false">学術論文（全文査読付Proceedings）</button>
             <ul id="proceedings-list-en" style="display: none;">
             </ul>
-            <p onclick="togglePublications('internationalconf-list-en')" style="cursor: pointer;"><strong>国際会議口頭発表
-                    ▼</strong></p>
+
+            <button class="toggle-btn" onclick="togglePublications('internationalconf-list-en', this)"
+                aria-expanded="false">国際会議口頭発表</button>
             <ul id="internationalconf-list-en" style="display: none;">
             </ul>
-            <p onclick="togglePublications('nationalconf-list-jp')" style="cursor: pointer;"><strong>国内口頭発表 ▼</strong>
-            </p>
+
+            <button class="toggle-btn" onclick="togglePublications('nationalconf-list-jp', this)"
+                aria-expanded="false">国内口頭発表</button>
             <ul id="nationalconf-list-jp" style="display: none;">
             </ul>
-            <p onclick="togglePublications('lecture-list-jp')" style="cursor: pointer;"><strong>講演・総説・解説・資料等 ▼</strong>
-            </p>
+
+            <button class="toggle-btn" onclick="togglePublications('lecture-list-jp', this)"
+                aria-expanded="false">講演・総説・解説・資料等</button>
             <ul id="lecture-list-jp" style="display: none;">
             </ul>
-            <p onclick="togglePublications('patent-list-jp')" style="cursor: pointer;"><strong>特許 ▼</strong></p>
+
+            <button class="toggle-btn" onclick="togglePublications('patent-list-jp', this)"
+                aria-expanded="false">特許</button>
             <ul id="patent-list-jp" style="display: none;">
             </ul>
-            <p onclick="togglePublications('media-list-jp')" style="cursor: pointer;"><strong>メディア報道 ▼</strong></p>
+
+            <button class="toggle-btn" onclick="togglePublications('media-list-jp', this)"
+                aria-expanded="false">メディア報道</button>
             <ul id="media-list-jp" style="display: none;">
             </ul>
-
-
         </section>
 
         <section id="link">
